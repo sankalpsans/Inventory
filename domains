@@ -1,0 +1,5 @@
+[
+{"name":"GESS_PROD", "owner":"Some Guy", "softwares":[1, 2, 3, 0]},
+{"name":"GSPEED_PROD","owner":"Other Guy", "softwares":[1, 2, 3, 0]},
+{"name":"iCALMS","owner":"Still Other Guy", "softwares":[1, 4, 3, 0]}
+]
