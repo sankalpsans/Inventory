@@ -5,14 +5,7 @@
  $(document).on('click', '#domain', function(btn) { i = 0; toggle(); });// Bind future DOMs
  $(document).on('click', '#software', function(btn) { i = 1; toggle(); });// Bind future DOMs
  $('.search-query').focus();
- $('body').on('keyup', function(e){
-  if(e.which == 27)
-   toggle();
-  else;
-  $('.search-query').focus();
-  search();
- });
-});
+
 
 function gotoDomain(dom)
  {
@@ -165,7 +158,6 @@ function toggle()
 
 function getIP()
  {
-//  console.log(url);
   var url = './IP';
   $.get(url, function(j){
     var json = jQuery.parseJSON(j);
@@ -191,3 +183,4 @@ function getSoftwares()
     softwares = json;
    });
  }
+

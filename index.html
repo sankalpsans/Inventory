@@ -3,9 +3,9 @@
 <title>
 TechTeam
 </title>
-<link rel = "stylesheet" type = "css" href = './bootstrap.css'>
+<link rel = "stylesheet" type = "text/css" href = './bootstrap.css'>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src = "./Inventory.js"></script>
+<script src = "./Inventory.js" type = "text/javaScript"></script>
 <script type = "text/javascript">
 var IP, domains, softwares;
     searchmodes = ['IP', 'Domain', 'Software'];
@@ -16,6 +16,14 @@ $(function(){
  getIP();
  getDomains();
  getSoftwares();
+ $('body').on('keyup', function(e){
+  if(e.which == 27)
+   toggle();
+  else;
+  $('.search-query').focus();
+  search();
+ });
+});
 </script>
 </head>
 <body >
